@@ -1,0 +1,17 @@
+.section{
+    background: #ffffff;
+    box-shadow: #cccccc 0 0 3px .5px;
+    padding: 20px;
+}
+
+.section__header{
+    border-bottom: 2px solid #bbb;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section__content{
+    padding: 20px 0;
+}
