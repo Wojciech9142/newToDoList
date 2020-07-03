@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+::after, ::before{
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
