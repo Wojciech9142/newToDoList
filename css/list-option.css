@@ -1,0 +1,28 @@
+.tasksListOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+@media(max-width:787px){
+    .tasksListOptions{
+        grid-template-columns: 1fr;
+    }
+}
+
+.taskListOptions__button{
+    background: transparent;
+    border: none;
+    color: hsl(180, 100%, 25%);
+    font-weight: 300;
+    display: none;
+}
+
+.taskListOptions__button--visible{
+    display: block;
+}
+
+.taskListOptions__button:hover{
+    color: hsl(180, 100%, 35%);
+    cursor: pointer;
+}
