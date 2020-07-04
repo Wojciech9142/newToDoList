@@ -1,10 +1,5 @@
 {
-    let tasksList = [
-        {
-            content: "wstać",
-            done: false,
-        },
-    ];
+    let tasksList = [];
     let isHideDone = false;
 
     const reloadList = () => {
@@ -89,8 +84,32 @@
 
     };
 
+
+    const addNewTask = (newTask) => {
+        tasksList = [
+            ...tasksList,
+            {
+                content: newTask,
+                done: false,
+            },
+        ];
+        reloadList();
+        renderButtons();
+    };
+
+    const resetForm = (newTaskElement) => {
+        newTaskElement.value = "";
+        newTaskElement.focus();
+    };
+
     const onFormSubmit = (event) => {
         event.preventDefault();
+
+        const newTaskElement = document.querySelector(".js-taskName");
+
+        (newTaskElement.value !== "") ? addNewTask(newTaskElement.value) : reloadList() ;
+
+        resetForm(newTaskElement);
     };
 
     const init = () => {
@@ -99,7 +118,6 @@
         formElement.addEventListener("submit", onFormSubmit);
         reloadList();
 
-        renderButtons();
         showNotFinished();
     }
 
