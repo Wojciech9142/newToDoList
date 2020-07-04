@@ -17,7 +17,7 @@
             listElement.innerHTML += `
                 ${(task.done) ? "<li class=\" taskList__item taskList__item--done \" >" :  "<li class=\" taskList__item \" >" }
                     <div class="taskList__toggleButton">
-                        ✔
+                        ${(task.done) ? "✔" : ""}
                     </div> 
                         ${task.content}
                     <div class="taskList__removeButton">
