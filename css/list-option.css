@@ -13,7 +13,7 @@
 .taskListOptions__button{
     background: transparent;
     border: none;
-    color: hsl(180, 100%, 25%);
+    color: hsl(180, 100%, 35%);
     font-weight: 300;
     display: none;
 }
@@ -23,6 +23,12 @@
 }
 
 .taskListOptions__button:hover{
-    color: hsl(180, 100%, 35%);
+    color: hsl(180, 100%, 45%);
     cursor: pointer;
+}
+
+.taskListOptions__button--disabled{
+    color: grey;
+    cursor: initial;
+    pointer-events: none;
 }
