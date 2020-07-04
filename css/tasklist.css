@@ -1,0 +1,42 @@
+.tasksList{
+    list-style: none;
+    padding: 0;
+}
+
+.taskList__toggleButton{
+    width: 30px;
+    height: 30px;
+    background: hsl(120, 100%, 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s;
+}
+
+.taskList__toggleButton:hover{
+    background: hsl(120, 100%, 30%);
+    cursor: pointer;
+}
+
+.taskList__removeButton{
+    width: 30px;
+    height: 30px;
+    background: hsl(0, 100%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s;
+}
+
+.taskList__removeButton:hover{
+    background: hsl(0, 100%, 40%);
+    cursor: pointer;
+}
+
+.taskList__item{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
