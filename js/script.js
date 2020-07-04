@@ -52,15 +52,18 @@
         }
     };
 
-    const changeHideDone = () => {
+    const changeHideDone = (hideDoneButtonElement) => {
         isHideDone = !isHideDone;
         reloadList();
+        isHideDone ? hideDoneButtonElement.innerText = "Pokaż ukończone" : hideDoneButtonElement.innerText = "Ukryj ukończone";
     }
 
     const showNotFinished = () => {
         const hideDoneButtonElement = document.querySelector(".js-hidingDone");
 
-        hideDoneButtonElement.addEventListener("click", changeHideDone);
+        hideDoneButtonElement.addEventListener("click", () => {
+            changeHideDone(hideDoneButtonElement)
+        });
     };
 
     const isNotFinished = (task) => {
