@@ -2,7 +2,7 @@
 
 ## Live:
 
-(https://wojciech9142.github.io/newToDoList/)
+[Demo of page](https://wojciech9142.github.io/newToDoList/)
 
 ## Used technology: 
 - HTML
