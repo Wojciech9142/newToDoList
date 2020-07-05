@@ -109,8 +109,9 @@
         event.preventDefault();
 
         const newTaskElement = document.querySelector(".js-taskName");
+        const newTaskElementValue = newTaskElement.value.trim();
 
-        (newTaskElement.value !== "") ? addNewTask(newTaskElement.value) : reloadList() ;
+        (newTaskElementValue !== "") ? addNewTask(newTaskElementValue) : reloadList() ;
 
         resetForm(newTaskElement);
     };
