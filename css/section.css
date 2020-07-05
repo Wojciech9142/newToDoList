@@ -12,6 +12,13 @@
     align-items: center;
 }
 
+@media(max-width: 787px){
+    .section__header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
 .section__content{
     padding: 20px 0;
 }

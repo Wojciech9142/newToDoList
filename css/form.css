@@ -19,12 +19,13 @@
     background-color: hsl(180, 100%, 25%);
     color: white;
     padding: 10px;
-    transition: background-color .3s;
+    transition: background-color .3s, transform .3s;
 }
 
 .form__buttonElement:hover{
     background-color: hsl(180, 100%, 30%);
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .form__buttonElement:active{
